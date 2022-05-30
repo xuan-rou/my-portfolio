@@ -24,28 +24,31 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link"><i class="nav__icon uil uil-estate"></i> Home</a>
+                            <a href="#home" class="nav__link active-link"><i class="nav__icon uil uil-estate"></i> Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link"><i class="nav__icon uil uil-user"></i> About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skill" class="nav__link"><i class="nav__icon uil uil-file"></i> Skill</a>
+                            <a href="#skills" class="nav__link"><i class="nav__icon uil uil-file"></i> Skill</a>
                         </li>
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="#service" class="nav__link"><i class="nav__icon uil uil-briefcase-alt"></i> Service</a>
-                        </li>
+                        </li> -->
                         <li class="nav__item">
                             <a href="#portfolio" class="nav__link"><i class="nav__icon uil uil-scenery"></i> Portfolio</a>
                         </li>
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="#contact" class="nav__link"><i class="nav__icon uil uil-message"></i> Contact</a>
-                        </li>
+                        </li> -->
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
 
                 <div class="nav__btns">
+                    <!-- 日間/夜間模式切換 -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -90,10 +93,9 @@
                         <div class="home__data">
                             <h1 class="home__title">Hi, I'm Roanne</h1>
                             <h3 class="home__subtitle">front-end developer</h3>
-                            <p class="home__description">High level experience in web design and 
-                                development knowledge, producing quality work.</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-message button__icon"></i>
+                            <p class="home__description">在網頁設計、切版擁有4年以上的經驗，可以製作出高質量的作品，未來將更努力提升關於前端開發等知識技能。</p>
+                            <a href="#portfolio" class="button button--flex">
+                                View My Portfolio <i class="uil uil-angle-double-right button__icon"></i>
                             </a>
                         </div>
                     </div>
@@ -113,15 +115,14 @@
                 <span class="section__subtitle">My Introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/perfil2.png" alt="" class="about__img">
+                    <img src="assets/img/me.jpg" alt="" class="about__img">
 
                     <div class="about__data">
-                        <p class="about__description">Web developer, with extensive knowledge and years of experience, 
-                            working in web technologies and Ui / Ux design, delivering quality work.</p>
+                        <p class="about__description">前端Web開發人員，已具有相關就學經歷和實務經驗，主要負責 Ui / Ux 設計、網頁切版(含各裝置、各瀏覽器自適應)、Web 技術(React.js)。</p>
 
                         <div class="about__info">
                             <div>
-                                <span class="about__info-title">04+</span>
+                                <span class="about__info-title">05+</span>
                                 <span class="about__info-name">Years <br> experience</span>
                             </div>
                             <div>
@@ -134,59 +135,345 @@
                             </div>
                         </div>
 
-                        <div class="about__buttons">
+                        <!-- <div class="about__buttons">
                             <a href="assets/" download="" class="button button--flex">
                                 Download CV 
                                 <i class="uil uil-download-alt button__icon"></i>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My Technical Level</span>
 
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Frontend Developer</h1>
+                                    <span class="skills__subtitle">More than 4 years</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__number">Primary</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__react"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-swatchbook skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">UI Designer</h1>
+                                    <span class="skills__subtitle">More than 2 years</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Photoshop</h3>
+                                        <span class="skills__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ps"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Adobe Illustrator</h3>
+                                        <span class="skills__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ai"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Figma</h3>
+                                        <span class="skills__number">Primary</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__figma"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My Experience</span>
 
+                <div class="qualification__container container">
+                    <div class="qualification__content">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Dept. MIS</h3>
+                                <span class="qualification__subtitle">國立嘉義大學</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2013 - 2017
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Intern</h3>
+                                <span class="qualification__subtitle">先傑有限公司</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2016 - 2017
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Web Designer</h3>
+                                <span class="qualification__subtitle">首岳股份有限公司</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Frontend Developer</h3>
+                                <span class="qualification__subtitle">華瑞股份有限公司</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019 - 2022
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
+            <!-- <section class="services section" id="services">
                 
-            </section>
+            </section> -->
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most Recent Works</span>
+
+                <div class="portfolio__container container">
+                    <div class="portfolio__tabs">
+                        <div class="portfolio__button button--flex portfolio__active" data-target="#design">
+                            <i class="uil uil-palette portfolio__icon"></i>
+                            Design
+                        </div>
+                        <div class="portfolio__button button--flex" data-target="#project">
+                            <i class="uil uil-window portfolio__icon"></i>
+                            Project
+                        </div>
+                    </div>
+
+                    <div class="portfolio__sections">
+                        <!--==================== DESIGN ====================-->
+                        <div class="portfolio__content grid portfolio__active" data-content id="design">
+                            <article class="portfolio__card">
+                                <img src="assets/img/portfolio1.jpg" class="portfolio__img" alt="">
+
+                                <div class="portfolio__modal">
+                                    <div>
+                                        <span class="portfolio__subtitle">Wireframe(App UI)</span>
+                                        <h3 class="portfolio__title">南海茶道會員系統</h3>
+                                        <a href="https://www.figma.com/file/KzdKEhF9fXOwq0CqdihBOW/%E5%8D%97%E6%B5%B7%E8%8C%B6%E9%81%93%E7%B7%9A%E4%B8%8A%E6%9C%83%E5%93%A1%E7%B3%BB%E7%B5%B1" target="_blank" class="portfolio__card-button button">
+                                            <i class="uil uil-link-alt portfolio__card-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="portfolio__card">
+                                <img src="assets/img/portfolio2.jpg" class="portfolio__img" alt="">
+
+                                <div class="portfolio__modal">
+                                    <div>
+                                        <span class="portfolio__subtitle">Wireframe(App UI)</span>
+                                        <h3 class="portfolio__title">茂林訂購系統</h3>
+                                        <a href="https://www.figma.com/file/7Xap55DyJiaVG9SW9mwJM2/%E8%8C%82%E6%9E%97%E8%A8%82%E8%B3%BC%E7%B3%BB%E7%B5%B1?node-id=0%3A1" target="_blank" class="portfolio__card-button button">
+                                            <i class="uil uil-link-alt portfolio__card-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="portfolio__card">
+                                <img src="assets/img/portfolio3.jpg" class="portfolio__img" alt="">
+
+                                <div class="portfolio__modal">
+                                    <div>
+                                        <span class="portfolio__subtitle">Product DM</span>
+                                        <h3 class="portfolio__title">GINORI 電動自行車</h3>
+                                        <a href="https://drive.google.com/file/d/1thaHh5BK-4Y6M4Psyitw2DG9AtBSAmRl/view?usp=sharing" target="_blank" class="portfolio__card-button button">
+                                            <i class="uil uil-link-alt portfolio__card-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--==================== PROJECT ====================-->
+                        <div class="portfolio__content grid" data-content id="project">
+                            <article class="portfolio__card">
+                                <img src="assets/img/project1.jpg" class="portfolio__img" alt="">
+
+                                <div class="portfolio__modal">
+                                    <div>
+                                        <span class="portfolio__subtitle">Website</span>
+                                        <h3 class="portfolio__title">南海茶道線上點餐系統</h3>
+                                        <a href="https://pos.nanhaisado.com.tw/nanhaiorder/" target="_blank" class="portfolio__card-button button">
+                                            <i class="uil uil-link-alt portfolio__card-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="portfolio__card">
+                                <img src="assets/img/project2.jpg" class="portfolio__img" alt="">
+
+                                <div class="portfolio__modal">
+                                    <div>
+                                        <span class="portfolio__subtitle">Website</span>
+                                        <h3 class="portfolio__title">國立中央大學</h3>
+                                        <a href="https://www.ncu.edu.tw/tw/" target="_blank" class="portfolio__card-button button">
+                                            <i class="uil uil-link-alt portfolio__card-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="portfolio__card">
+                                <img src="assets/img/project3.jpg" class="portfolio__img" alt="">
+
+                                <div class="portfolio__modal">
+                                    <div>
+                                        <span class="portfolio__subtitle">Website (processing)</span>
+                                        <h3 class="portfolio__title">台灣實驗教育推動中心(政大)</h3>
+                                        <a href="https://nccu.huaray.com.tw/tw/index.php" target="_blank" class="portfolio__card-button button">
+                                            <i class="uil uil-link-alt portfolio__card-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="portfolio__card">
+                                <img src="assets/img/project4.jpg" class="portfolio__img" alt="">
+
+                                <div class="portfolio__modal">
+                                    <div>
+                                        <span class="portfolio__subtitle">Shopping Website</span>
+                                        <h3 class="portfolio__title">金門水產試驗所</h3>
+                                        <a href="https://demo.huaray.com.tw/kinmen/" target="_blank" class="portfolio__card-button button">
+                                            <i class="uil uil-link-alt portfolio__card-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="portfolio__card">
+                                <img src="assets/img/project5.jpg" class="portfolio__img" alt="">
+
+                                <div class="portfolio__modal">
+                                    <div>
+                                        <span class="portfolio__subtitle">Line Social Web App</span>
+                                        <h3 class="portfolio__title">熱火</h3>
+                                        <a href="https://otsmarketing.com.tw/1759/" target="_blank" class="portfolio__card-button button">
+                                            <i class="uil uil-link-alt portfolio__card-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-            </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-         
+            <span class="footer__copy">&#169 Roanne. All right reserved</span>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
