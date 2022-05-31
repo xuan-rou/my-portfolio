@@ -325,7 +325,25 @@ img {
 }
 
 .home__description {
+  /* margin-bottom: var(--mb-2); */
+  margin-bottom: var(--mb-0-75);
+}
+
+.home__contact {
   margin-bottom: var(--mb-2);
+}
+
+.contact__item a {
+  color: var(--first-color);
+}
+
+.contact__item a:hover {
+  color: var(--first-color-alt);
+}
+
+.contact__item-icon {
+  font-size: 1.25rem;
+  margin-right: var(--mb-0-25);
 }
 
 .home__scroll {
